@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	var conferenceName = "GO conference"
-	const conferenceTickets = 50
-	var remainingTickets = 50
+	conferenceName := "GO conference"
+	const conferenceTickets int = 50
+	var remainingTickets int = 50
 
 	fmt.Printf("confrence is %T, remaining tickets is %T, conferencename is %T\n", conferenceTickets, remainingTickets, conferenceName)
 
@@ -13,12 +13,23 @@ func main() {
 	fmt.Printf("we have a total of %v, tickets and %v are still available\n", conferenceTickets, remainingTickets)
 	fmt.Println("Book tickets now")
 
-	var userName string
+	var firstName string
+	var lastName string
+	var email string
 	var userTickets int
 	//asking the user their name
+	fmt.Println("Enter your first name:")
+	fmt.Scan(&firstName)
+	//asking their last name
+	fmt.Println("Enter your Last name:")
+	fmt.Scan(&lastName)
+	//asking for thier email
+	fmt.Println("Enter your Email address:")
+	fmt.Scan(&email)
+	//number of tickets
+	fmt.Println("Enter your number of Tickets to get:")
+	fmt.Scan(&userTickets)
 
-	userName = "Tom"
-	userTickets = 2
-	fmt.Printf("user %v booked %v tickets\n", userName, userTickets)
+	fmt.Printf("Thank you %v %v for booking %v tickets. you will receive a confirmation email at %v\n", firstName, lastName, userTickets, email)
 
 }

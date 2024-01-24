@@ -29,7 +29,7 @@ func main() {
 	fmt.Println("Enter your number of Tickets to get:")
 	fmt.Scan(&userTickets)
 	remainingTickets = remainingTickets - userTickets
-	bookings[0] = firstName + " " + lastName
+	bookings[4] = firstName + " " + lastName
 	fmt.Printf("The whole array : %v\n", bookings)
 	fmt.Printf("The first value : %T\n", bookings[0])
 	fmt.Printf("Array type : %v\n", len(bookings))
